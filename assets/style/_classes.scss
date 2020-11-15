@@ -1,0 +1,96 @@
+// classes that frequently used ------------------------------------------------
+
+// container :start
+$sm: 540px;
+$md: 720px;
+$lg: 960px;
+$xl: 1140px;
+
+.container {
+  max-width: $lg;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    max-width: $md;
+  }
+  @include mobile_large {
+    max-width: $sm;
+  }
+  @include mobile_medium {
+    max-width: calc(100% - 1rem);
+  }
+}
+// container :end
+
+// container :width
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $n from 1 through 12 {
+  .col-#{$n} {
+    width: #{$n/12 * 100%};
+    @include mobile_large {
+      width: 100%;
+    }
+  }
+}
+
+// margin and padding
+@for $n from 1 through 20 {
+  // margin
+  .m-#{$n} {
+    margin: #{$n * 5}px;
+  }
+  .mt-#{$n},
+  .mt-md-#{$n},
+  .my-#{$n} {
+    margin-top: #{$n * 5}px;
+  }
+  .mb-#{$n},
+  .mb-md-#{$n},
+  .my-#{$n} {
+    margin-bottom: #{$n * 5}px;
+  }
+  .mr-#{$n},
+  .mr-md-#{$n},
+  .mx-#{$n} {
+    margin-right: #{$n * 5}px;
+  }
+  .ml-#{$n},
+  .ml-md-#{$n},
+  .mx-#{$n} {
+    margin-left: #{$n * 5}px;
+  }
+
+  // padding
+  .p-#{$n} {
+    padding: #{$n * 5}px;
+  }
+  .pt-#{$n},
+  .pt-md-#{$n},
+  .py-#{$n} {
+    padding-top: #{$n * 5}px;
+  }
+  .pb-#{$n},
+  .pb-md-#{$n},
+  .py-#{$n} {
+    padding-bottom: #{$n * 5}px;
+  }
+  .pr-#{$n},
+  .pr-md-#{$n},
+  .px-#{$n} {
+    padding-right: #{$n * 5}px;
+  }
+  .pl-#{$n},
+  .pl-md-#{$n},
+  .px-#{$n} {
+    padding-left: #{$n * 5}px;
+  }
+}
+@include mobile_large {
+  [class*='mr-md-'] {
+    padding-right: 0;
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <div :class="['hero-image', { scrolled: scrolled }]">
       <img src="/img/bali.jpg" alt="bali" />
       <div class="caption">
@@ -7,13 +7,32 @@
         <p>Make your dream come true</p>
       </div>
     </div>
-    <div class="content">hello</div>
+    <div class="content container mt-20">
+      <div class="row">
+        <div class="col-4 p-2">
+          <product-card></product-card>
+        </div>
+        <div class="col-4 p-2">
+          <product-card></product-card>
+        </div>
+        <div class="col-4 p-2">
+          <product-card></product-card>
+        </div>
+        <div class="col-4 p-2">
+          <product-card></product-card>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import ProductCard from '~/components/ProductCard'
 export default {
   name: 'Home',
+  components: {
+    ProductCard,
+  },
   data() {
     return {
       scrolled: false,
