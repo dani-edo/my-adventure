@@ -20,6 +20,7 @@
               :date="item.date"
               :time="item.time"
               :price="item.price"
+              :location="item.location"
               :img="item.img[0]"
             ></product-card>
           </nuxt-link>
@@ -76,6 +77,11 @@ export default {
     },
     ...mapMutations(['addProducts']),
     ...mapActions(['getData']),
+  },
+  head() {
+    return {
+      title: 'My Adventure | Japan',
+    }
   },
 }
 </script>

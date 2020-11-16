@@ -6,13 +6,17 @@
         {{ title }}
       </div>
       <div class="scedule">
-        <div class="date">
-          <img src="/svg/date.svg" alt="date" class="mr-1" />
+        <div class="date mr-2">
+          <img src="/svg/light/date.svg" alt="date" class="mr-1" />
           {{ date }}
         </div>
-        <div class="time ml-2">
-          <img src="/svg/clock.svg" alt="clock" class="mr-1" />
+        <div class="time mr-2">
+          <img src="/svg/light/clock.svg" alt="clock" class="mr-1" />
           {{ time }}
+        </div>
+        <div class="time">
+          <img src="/svg/light/location.svg" alt="location" class="mr-1" />
+          {{ location }}
         </div>
       </div>
       <div class="price">{{ price }}</div>
@@ -33,6 +37,10 @@ export default {
       default: null,
     },
     time: {
+      type: String,
+      default: null,
+    },
+    location: {
       type: String,
       default: null,
     },

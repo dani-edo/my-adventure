@@ -32,16 +32,18 @@
     .scedule {
       display: flex;
       font-size: 0.9rem;
+      flex-wrap: wrap;
       & > * {
         display: flex;
         align-items: center;
+        margin-bottom: 0.5rem;
       }
       img {
         width: 0.9rem;
+        height: 0.9rem;
       }
     }
     .price {
-      margin-top: 1rem;
       font-size: 1.8rem;
       font-weight: 700;
       text-align: right;

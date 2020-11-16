@@ -10,13 +10,13 @@
       </p>
       <div class="socials">
         <a href="#">
-          <img src="/svg/facebook.svg" alt="facebook" />
+          <img src="/svg/light/facebook.svg" alt="facebook" />
         </a>
         <a href="#">
-          <img src="/svg/twitter.svg" alt="twitter" />
+          <img src="/svg/light/twitter.svg" alt="twitter" />
         </a>
         <a href="#">
-          <img src="/svg/instagram.svg" alt="instagram" />
+          <img src="/svg/light/instagram.svg" alt="instagram" />
         </a>
       </div>
     </div>
