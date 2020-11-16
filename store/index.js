@@ -21,6 +21,7 @@ export const actions = {
       )
       .then((data) => {
         context.commit('addProducts', data)
+        console.log(data)
       })
       .catch((err) => {
         console.log(err)
