@@ -6,7 +6,7 @@
   height: 400px;
   transition: all ease-out 500ms;
   &:hover {
-    margin-top: -10px;
+    margin-top: -5px;
     box-shadow: 0 10px 10px 0px #00000061;
   }
   .product-image {
@@ -31,9 +31,13 @@
     }
     .scedule {
       display: flex;
+      font-size: 0.9rem;
       & > * {
         display: flex;
         align-items: center;
+      }
+      img {
+        width: 0.9rem;
       }
     }
     .price {
@@ -42,4 +46,9 @@
       text-align: right;
     }
   }
+}
+
+nav {
+  position: sticky;
+  top: 0;
 }

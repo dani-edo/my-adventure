@@ -26,6 +26,7 @@ $xl: 1140px;
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @for $n from 1 through 12 {
