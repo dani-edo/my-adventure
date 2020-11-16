@@ -6,7 +6,13 @@
       "date": "Always Available",
       "time": "4D/3N",
       "price": "IDR 4.718.907",
-      "img": "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1069&q=80"
+      "img": [
+        "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1069&q=80",
+        "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1069&q=80",
+        "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1069&q=80",
+        "https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1069&q=80"
+      ],
+      "location": "Japan"
     },
     {
       "id": 2,
@@ -14,7 +20,13 @@
       "date": "Always Available",
       "time": "5D/4N",
       "price": "IDR 16.228.000",
-      "img": "https://images.yuktravel.com/images/upload/tours/wide/5D4N-Experience-All-Inclusive-Package-at-Club-Med-Tomamu-Hokkaido-Japan-19-mobile.jpg"
+      "img": [
+        "https://images.yuktravel.com/images/upload/tours/wide/5D4N-Experience-All-Inclusive-Package-at-Club-Med-Tomamu-Hokkaido-Japan-19-mobile.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/5D4N-Experience-All-Inclusive-Package-at-Club-Med-Tomamu-Hokkaido-Japan-19-mobile.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/5D4N-Experience-All-Inclusive-Package-at-Club-Med-Tomamu-Hokkaido-Japan-19-mobile.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/5D4N-Experience-All-Inclusive-Package-at-Club-Med-Tomamu-Hokkaido-Japan-19-mobile.jpg"
+      ],
+      "location": "Japan"
     },
     {
       "id": 3,
@@ -22,7 +34,13 @@
       "date": "Always Available",
       "time": "4D/3N",
       "price": "IDR 3.051.100",
-      "img": "https://images.yuktravel.com/images/upload/tours/wide/4D3N-Experience-Cityrama-Tokyo-Tour-19-480.jpg"
+      "img": [
+        "https://images.yuktravel.com/images/upload/tours/wide/4D3N-Experience-Cityrama-Tokyo-Tour-19-480.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/4D3N-Experience-Cityrama-Tokyo-Tour-19-480.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/4D3N-Experience-Cityrama-Tokyo-Tour-19-480.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/4D3N-Experience-Cityrama-Tokyo-Tour-19-480.jpg"
+      ],
+      "location": "Japan"
     },
     {
       "id": 4,
@@ -30,7 +48,13 @@
       "date": "Always Available",
       "time": "4D/3N",
       "price": "IDR 4.076.000",
-      "img": "https://images.yuktravel.com/images/upload/tours/wide/mainimage-4d3n-rom-osaka.jpg"
+      "img": [
+        "https://images.yuktravel.com/images/upload/tours/wide/mainimage-4d3n-rom-osaka.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/mainimage-4d3n-rom-osaka.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/mainimage-4d3n-rom-osaka.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/mainimage-4d3n-rom-osaka.jpg"
+      ],
+      "location": "Japan"
     },
     {
       "id": 5,
@@ -38,7 +62,13 @@
       "date": "Always Available",
       "time": "7D/6N",
       "price": "IDR 12.403.200",
-      "img": "https://images.yuktravel.com/images/upload/tours/wide/7D6N-Experience-Romantic-Tokyo-Osaka-Kyoto-Tour-2017.jpg"
+      "img": [
+        "https://images.yuktravel.com/images/upload/tours/wide/7D6N-Experience-Romantic-Tokyo-Osaka-Kyoto-Tour-2017.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/7D6N-Experience-Romantic-Tokyo-Osaka-Kyoto-Tour-2017.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/7D6N-Experience-Romantic-Tokyo-Osaka-Kyoto-Tour-2017.jpg",
+        "https://images.yuktravel.com/images/upload/tours/wide/7D6N-Experience-Romantic-Tokyo-Osaka-Kyoto-Tour-2017.jpg"
+      ],
+      "location": "Japan"
     },
     {
       "id": 6,
@@ -46,7 +76,13 @@
       "date": "Always Available",
       "time": "1D",
       "price": "IDR 1.395.900",
-      "img": "https://images.yuktravel.com/images/upload/jtours/wide/Kansai-Walking-Tour-480.jpg"
+      "img": [
+        "https://images.yuktravel.com/images/upload/jtours/wide/Kansai-Walking-Tour-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Kansai-Walking-Tour-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Kansai-Walking-Tour-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Kansai-Walking-Tour-480.jpg"
+      ],
+      "location": "Japan"
     },
     {
       "id": 7,
@@ -54,7 +90,13 @@
       "date": "Always Available",
       "time": "1D",
       "price": "IDR 987.000",
-      "img": "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Experience-Activities-480.jpg"
+      "img": [
+        "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Experience-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Experience-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Experience-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Experience-Activities-480.jpg"
+      ],
+      "location": "Japan"
     },
     {
       "id": 8,
@@ -62,7 +104,13 @@
       "date": "Always Available",
       "time": "1D",
       "price": "IDR 418.770",
-      "img": "https://images.yuktravel.com/images/upload/jtours/wide/Tohoku-Culinary-Activities-480.jpg"
+      "img": [
+        "https://images.yuktravel.com/images/upload/jtours/wide/Tohoku-Culinary-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Tohoku-Culinary-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Tohoku-Culinary-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Tohoku-Culinary-Activities-480.jpg"
+      ],
+      "location": "Japan"
     },
     {
       "id": 9,
@@ -70,7 +118,13 @@
       "date": "Always Available",
       "time": "1D",
       "price": "IDR 705.000",
-      "img": "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Culinary-Activities-480.jpg"
+      "img": [
+        "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Culinary-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Culinary-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Culinary-Activities-480.jpg",
+        "https://images.yuktravel.com/images/upload/jtours/wide/Okinawa-Culinary-Activities-480.jpg"
+      ],
+      "location": "Japan"
     }
   ]
 }

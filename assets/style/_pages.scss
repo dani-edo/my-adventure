@@ -73,3 +73,60 @@
     }
   }
 }
+
+.detail {
+  min-height: 100vh;
+  padding-top: 3rem;
+  .title {
+    color: $primary;
+    margin-bottom: 1rem;
+  }
+  .scedule {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    & > * {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+      img {
+        width: 1.3rem;
+      }
+    }
+  }
+  .hooper {
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    .hooper-track li img {
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+    }
+  }
+  .cta-card {
+    background: #3d3d4e0f;
+    margin: 0 auto;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px -1px #3d3d4e30;
+    position: sticky;
+    top: 1rem;
+    .price {
+      font-size: 2rem;
+      text-align: center;
+    }
+    button {
+      margin-top: 1rem;
+      background: $primary;
+      border: none;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  }
+}

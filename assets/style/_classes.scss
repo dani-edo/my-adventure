@@ -90,8 +90,10 @@ $xl: 1140px;
     padding-left: #{$n * 5}px;
   }
 }
-@include mobile_large {
-  [class*='mr-md-'] {
-    padding-right: 0;
-  }
+
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
 }
