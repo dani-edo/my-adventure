@@ -8,12 +8,9 @@
       </div>
     </div>
     <div class="content">
-      <!-- <nav class="container">
-        <div class="navbar-brand">My Adventure</div>
-      </nav> -->
       <div class="box my-10">
         <div class="title container">Japan, Endless Discovery</div>
-        <div class="desc">Pilih paket wisatamu ke jepang</div>
+        <div class="desc">Choose the trip package that you love</div>
       </div>
       <div class="row container">
         <div v-for="item in products" :key="item.key" class="col-4 p-2">
