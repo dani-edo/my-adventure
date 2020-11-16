@@ -37,7 +37,9 @@
 </template>
 
 <script>
+import { mapMutations, mapActions } from 'vuex'
 import ProductCard from '~/components/ProductCard'
+
 export default {
   name: 'Home',
   components: {
@@ -46,9 +48,15 @@ export default {
   data() {
     return {
       scrolled: false,
-      notfound: false,
-      products: [],
     }
+  },
+  computed: {
+    products() {
+      return this.$store.state.products
+    },
+    notfound() {
+      return this.$store.state.notfound
+    },
   },
   beforeMount() {
     window.addEventListener('scroll', this.onScroll)
@@ -57,18 +65,7 @@ export default {
     window.removeEventListener('scroll', this.onScroll)
   },
   mounted() {
-    this.$axios
-      .$get(
-        'https://my-json-server.typicode.com/dani-edo/my-adventure/products'
-      )
-      .then((data) => {
-        this.notfound = false
-        this.products = data
-      })
-      .catch((err) => {
-        console.log(err)
-        this.notfound = true
-      })
+    this.getData()
   },
   methods: {
     onScroll() {
@@ -78,6 +75,8 @@ export default {
         this.scrolled = true
       }
     },
+    ...mapMutations(['addProducts']),
+    ...mapActions(['getData']),
   },
 }
 </script>
