@@ -14,7 +14,7 @@
       </div>
       <div class="row container">
         <div v-for="item in products" :key="item.key" class="col-4 p-2">
-          <nuxt-link to="/detail">
+          <nuxt-link :to="`/detail/${item.id}`">
             <product-card
               :title="item.title"
               :date="item.date"

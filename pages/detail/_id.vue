@@ -35,6 +35,7 @@
 </template>
 
 <script>
+import { mapMutations, mapActions } from 'vuex'
 import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper'
 import 'hooper/dist/hooper.css'
 
@@ -45,21 +46,9 @@ export default {
     Slide,
     HooperNavigation,
   },
+
   data() {
     return {
-      product: {
-        id: 8,
-        title:
-          'Tohoku Culinary Activities - Dinner Set Plan In Tsugaru / Sake Tasting / More',
-        date: 'Always Available',
-        time: '1D',
-        price: 'IDR 418.770',
-        img: [
-          'https://images.yuktravel.com/images/upload/jtours/wide/Tohoku-Culinary-Activities-480.jpg',
-          'https://images.yuktravel.com/images/upload/jtours/wide/Tohoku-Culinary-Activities-480.jpg',
-          'https://images.yuktravel.com/images/upload/jtours/wide/Tohoku-Culinary-Activities-480.jpg',
-        ],
-      },
       settings: {
         autoPlay: true,
         infiniteScroll: true,
@@ -68,6 +57,21 @@ export default {
         wheelControl: false,
       },
     }
+  },
+  computed: {
+    product() {
+      const data = this.$store.state.products.filter((e) => {
+        return e.id === parseInt(this.$route.params.id)
+      })
+      return data[0] ? data[0] : []
+    },
+  },
+  mounted() {
+    this.getData()
+  },
+  methods: {
+    ...mapMutations(['addProducts']),
+    ...mapActions(['getData']),
   },
 }
 </script>
