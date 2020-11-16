@@ -32,16 +32,7 @@
         <div class="description">
           <div class="title">Description</div>
           <p>
-            After doing the Tokyo-Kyoto-Osaka route on my first visit to Japan
-            earlier this year, I wanted to try something a bit more
-            off-the-beaten-path for my second trip to the country. I heard great
-            things here and there about Shirakawa-go, Takayama and Kanazawa and
-            was excited to learn that these three places were all in the same
-            region of Japan, along a well serviced route from both Tokyo and
-            Osaka-Kyoto. Takayama, Shirakawa-go and Kanazawa is a great
-            itinerary to consider as it offers a great mix of sights and foods
-            to appeal to a wide audience whilst being undiscovered enough to not
-            feel like everybody’s here during your visit.
+            {{ product.description }}
           </p>
         </div>
       </div>
