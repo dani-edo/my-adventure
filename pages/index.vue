@@ -25,6 +25,12 @@
             :img="item.img"
           ></product-card>
         </div>
+        <div v-if="products.length === 0 && !notfound" class="loader">
+          Loading data ...
+        </div>
+        <div v-if="products.length === 0 && notfound" class="loader">
+          Products not found!
+        </div>
       </div>
     </div>
   </div>
@@ -40,58 +46,8 @@ export default {
   data() {
     return {
       scrolled: false,
-      products: [
-        {
-          title: 'Experience Tokyo with Mt Fuji & Hakone Tour',
-          date: '17 Agustus 1945',
-          time: '4D/3N',
-          price: 'IDR 4.718.907',
-          img:
-            'https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1069&q=80',
-        },
-        {
-          title:
-            'Experience All Inclusive Package At Club Med Tomamu Hokkaido Japan',
-          date: '17 Agustus 1945',
-          time: '5D/4N',
-          price: 'IDR 16.228.000',
-          img:
-            'https://images.yuktravel.com/images/upload/tours/wide/5D4N-Experience-All-Inclusive-Package-at-Club-Med-Tomamu-Hokkaido-Japan-19-mobile.jpg',
-        },
-        {
-          title: 'Experience Cityrama Tokyo Tour',
-          date: '17 Agustus 1945',
-          time: '4D/3N',
-          price: 'IDR 3.051.100',
-          img:
-            'https://images.yuktravel.com/images/upload/tours/wide/4D3N-Experience-Cityrama-Tokyo-Tour-19-480.jpg',
-        },
-        {
-          title: 'Experience Osaka With Universal Studio Japan',
-          date: '17 Agustus 1945',
-          time: '4D/3N',
-          price: 'IDR 4.076.000',
-          img:
-            'https://images.yuktravel.com/images/upload/tours/wide/mainimage-4d3n-rom-osaka.jpg',
-        },
-        {
-          title:
-            'Experience Tokyo Osaka Kyoto Tour With Disneyland Or Disneysea & Universal Studio Japan',
-          date: '17 Agustus 1945',
-          time: '7D/6N',
-          price: 'IDR 12.403.200',
-          img:
-            'https://images.yuktravel.com/images/upload/tours/wide/7D6N-Experience-Romantic-Tokyo-Osaka-Kyoto-Tour-2017.jpg',
-        },
-        {
-          title: '1-Day Nara & Kyoto Bus Tour',
-          date: '17 Agustus 1945',
-          time: '1D',
-          price: 'IDR 1.395.900',
-          img:
-            'https://images.yuktravel.com/images/upload/jtours/wide/Kansai-Walking-Tour-480.jpg',
-        },
-      ],
+      notfound: false,
+      products: [],
     }
   },
   beforeMount() {
