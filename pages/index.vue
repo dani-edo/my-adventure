@@ -56,11 +56,25 @@ export default {
   beforeDestroy() {
     window.removeEventListener('scroll', this.onScroll)
   },
+  mounted() {
+    this.$axios
+      .$get(
+        'https://my-json-server.typicode.com/dani-edo/my-adventure/products'
+      )
+      .then((data) => {
+        this.notfound = false
+        this.products = data
+      })
+      .catch((err) => {
+        console.log(err)
+        this.notfound = true
+      })
+  },
   methods: {
     onScroll() {
       if (window.scrollY <= 5) {
         this.scrolled = false
-      } else {
+      } else if (window.scrollY > 10) {
         this.scrolled = true
       }
     },
