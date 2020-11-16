@@ -145,5 +145,21 @@
         background-color: #ff0000ab;
       }
     }
+    .benefit {
+      display: flex;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+      .item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+        img {
+          width: 1.2rem;
+          margin-right: 0.2rem;
+        }
+      }
+    }
   }
 }

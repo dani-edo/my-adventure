@@ -42,6 +42,19 @@
             {{ product.price }}
           </div>
           <button>BOOK</button>
+          <div class="benefit">
+            <div class="item">
+              <img src="/svg/dark/paperless.svg" alt="Digital ticket" />
+              <div class="text">Digital ticket</div>
+            </div>
+            <div class="item">
+              <img
+                src="/svg/dark/verification.svg"
+                alt="Instant confirmation"
+              />
+              <div class="text">Instant confirmation</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

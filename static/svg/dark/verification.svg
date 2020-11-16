@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__verifikasi" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#52575c}
+        </style>
+    </defs>
+    <g id="prefix__Group_3653" data-name="Group 3653" transform="translate(4.853 2)">
+        <path id="prefix__Path_4014" d="M702.372 15.532l-.72-.6a.938.938 0 0 0-1.2 1.441l.721.6a.283.283 0 0 1 .1.215v.344h-1.863v-1.948A1.586 1.586 0 0 0 697.825 14h-6.784a2.19 2.19 0 0 0-2.188 2.188v15.624A2.19 2.19 0 0 0 691.041 34h9.918a2.19 2.19 0 0 0 2.188-2.188V17.187a2.148 2.148 0 0 0-.775-1.655zm-1.1 16.28a.313.313 0 0 1-.313.313h-9.918a.313.313 0 0 1-.313-.313V16.188a.313.313 0 0 1 .313-.313h6.493v2.594a.937.937 0 0 0 .938.937h2.8z" class="prefix__cls-2" data-name="Path 4014" transform="translate(-688.853 -14)"/>
+        <path id="prefix__Path_4015" d="M694.134 23.916a.937.937 0 1 0-1.266 1.382l2.068 1.893a.938.938 0 0 0 1.292-.024l3.78-3.736a.937.937 0 1 0-1.318-1.331l-3.145 3.108z" class="prefix__cls-2" data-name="Path 4015" transform="translate(-688.853 -14)"/>
+    </g>
+</svg>
