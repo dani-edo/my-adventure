@@ -11,19 +11,21 @@
       <!-- <nav class="container">
         <div class="navbar-brand">My Adventure</div>
       </nav> -->
-      <div class="box my-5">
+      <div class="box my-10">
         <div class="title container">Japan, Endless Discovery</div>
         <div class="desc">Pilih paket wisatamu ke jepang</div>
       </div>
       <div class="row container">
         <div v-for="item in products" :key="item.key" class="col-4 p-2">
-          <product-card
-            :title="item.title"
-            :date="item.date"
-            :time="item.time"
-            :price="item.price"
-            :img="item.img"
-          ></product-card>
+          <nuxt-link to="/detail">
+            <product-card
+              :title="item.title"
+              :date="item.date"
+              :time="item.time"
+              :price="item.price"
+              :img="item.img"
+            ></product-card>
+          </nuxt-link>
         </div>
         <div v-if="products.length === 0 && !notfound" class="loader">
           Loading data ...

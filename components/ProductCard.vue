@@ -1,25 +1,23 @@
 <template>
-  <nuxt-link to="/">
-    <div class="product-card">
-      <img class="product-image" :src="img" alt="bali" />
-      <div class="label">
-        <div class="title">
-          {{ title }}
-        </div>
-        <div class="scedule">
-          <div class="date">
-            <img src="/svg/date.svg" alt="date" class="mr-1" />
-            {{ date }}
-          </div>
-          <div class="time ml-2">
-            <img src="/svg/clock.svg" alt="clock" class="mr-1" />
-            {{ time }}
-          </div>
-        </div>
-        <div class="price">{{ price }}</div>
+  <div class="product-card">
+    <img class="product-image" :src="img" alt="bali" />
+    <div class="label">
+      <div class="title">
+        {{ title }}
       </div>
+      <div class="scedule">
+        <div class="date">
+          <img src="/svg/date.svg" alt="date" class="mr-1" />
+          {{ date }}
+        </div>
+        <div class="time ml-2">
+          <img src="/svg/clock.svg" alt="clock" class="mr-1" />
+          {{ time }}
+        </div>
+      </div>
+      <div class="price">{{ price }}</div>
     </div>
-  </nuxt-link>
+  </div>
 </template>
 
 <script>
