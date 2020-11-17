@@ -158,7 +158,7 @@
           transform: translateX(-50%);
         }
         .icon {
-          width: 150px;
+          width: 40px;
           position: relative;
           span {
             width: 1rem;
@@ -169,8 +169,11 @@
             margin: 1px auto 0;
           }
         }
-        .title {
-          font-weight: bold;
+        .text {
+          width: 100%;
+          .title {
+            font-weight: bold;
+          }
         }
       }
     }
@@ -212,6 +215,10 @@
         align-items: center;
         &:not(:last-child) {
           margin-bottom: 0.5rem;
+          @include mobile_large {
+            margin-bottom: 0;
+            margin-right: 10px;
+          }
         }
         img {
           width: 1.2rem;
