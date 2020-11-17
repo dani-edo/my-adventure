@@ -43,4 +43,8 @@ export default {
   build: {},
 
   target: 'static',
+
+  generate: {
+    fallback: true,
+  },
 }
