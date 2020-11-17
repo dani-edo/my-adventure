@@ -109,8 +109,10 @@ footer {
   @extend .loading;
   background-color: red;
   color: white;
+  font-weight: bold;
   & > * {
     margin-top: 0.5rem;
+    font-weight: normal;
   }
   a {
     color: white;

@@ -5,7 +5,8 @@
       href="https://my-json-server.typicode.com/dani-edo/my-adventure/products"
       target="_blank"
     >
-      (https://my-json-server.typicode.com/dani-edo/my-adventure/products)
+      (you can check here:
+      https://my-json-server.typicode.com/dani-edo/my-adventure/products)
     </a>
     <button @click="reload">Reload data</button>
   </div>

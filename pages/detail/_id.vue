@@ -30,13 +30,13 @@
           </slide>
           <hooper-navigation slot="hooper-addons"></hooper-navigation>
         </hooper>
-        <div class="description">
+        <section class="description">
           <div class="title">Description</div>
           <p>
             {{ product.description }}
           </p>
-        </div>
-        <div class="include-exclude row">
+        </section>
+        <section class="include-exclude row">
           <div class="col-6">
             <h3 class="title">Include</h3>
             <ul>
@@ -55,7 +55,23 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
+        <section class="itinenrary">
+          <div class="title">Itinerary</div>
+          <div class="content">
+            <div v-for="item in product.itinerary" :key="item.key" class="item">
+              <span alt="icon" class="icon">
+                <span></span>
+              </span>
+              <span class="text">
+                <div class="title">{{ item.title }}</div>
+                <div class="description">
+                  {{ item.description }}
+                </div>
+              </span>
+            </div>
+          </div>
+        </section>
       </div>
       <div class="col-4">
         <div class="cta-card">
