@@ -13,3 +13,10 @@ body {
   overflow-x: hidden;
   color: $primary;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}

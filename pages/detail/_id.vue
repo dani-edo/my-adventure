@@ -1,6 +1,7 @@
 <template>
   <div class="detail">
     <div class="row container">
+      <breadcrumb :data="breadcrumb" />
       <div class="col-8 mr-auto">
         <h1 class="title">{{ product.title }}</h1>
         <div class="scedule">
@@ -65,6 +66,7 @@
 import { mapMutations, mapActions } from 'vuex'
 import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper'
 import 'hooper/dist/hooper.css'
+import Breadcrumb from '~/components/Breadcrumb'
 
 export default {
   name: 'Detail',
@@ -72,6 +74,7 @@ export default {
     Hooper,
     Slide,
     HooperNavigation,
+    Breadcrumb,
   },
 
   data() {
@@ -83,6 +86,16 @@ export default {
         transition: 900,
         wheelControl: false,
       },
+      breadcrumb: [
+        {
+          title: 'Home',
+          link: '/',
+        },
+        {
+          title: 'Detail Product',
+          link: '#',
+        },
+      ],
     }
   },
   computed: {
