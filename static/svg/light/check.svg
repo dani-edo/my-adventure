@@ -1,0 +1,21 @@
+<svg id="Include" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <circle id="Ellipse_148" data-name="Ellipse 148" cx="12" cy="12" r="12" fill="#3d3d4e" />
+  <g id="cek" transform="translate(4 4)">
+    <g id="Group_3625" data-name="Group 3625">
+      <g id="Layer_6" data-name="Layer 6">
+        <rect id="Rectangle_1593" data-name="Rectangle 1593" width="16" height="16" fill="#fff" opacity="0" />
+      </g>
+      <g id="Layer_4" data-name="Layer 4" transform="translate(1.375 3.333)">
+        <g id="Group_3624" data-name="Group 3624">
+          <g id="Group_3623" data-name="Group 3623">
+            <g id="Group_3622" data-name="Group 3622">
+              <path id="Path_3931" data-name="Path 3931"
+                d="M18.763,74.684a1.734,1.734,0,0,1-1.236-.512l-3.2-3.2A1.111,1.111,0,1,1,15.9,69.4l1.293,1.292a2.224,2.224,0,0,0,3.145,0l5.519-5.518a1.111,1.111,0,0,1,1.572,1.572L20,74.171A1.734,1.734,0,0,1,18.763,74.684Z"
+                transform="translate(-14 -64.847)" fill="#fff" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

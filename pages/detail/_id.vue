@@ -36,6 +36,26 @@
             {{ product.description }}
           </p>
         </div>
+        <div class="include-exclude row">
+          <div class="col-6">
+            <h3 class="title">Include</h3>
+            <ul>
+              <li v-for="item in product.includes" :key="item.key">
+                <img src="/svg/light/check.svg" alt="check" />
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h3 class="title">Exclude</h3>
+            <ul>
+              <li v-for="item in product.excludes" :key="item.key">
+                <img src="/svg/light/uncheck.svg" alt="check" />
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="col-4">
         <div class="cta-card">

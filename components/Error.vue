@@ -1,6 +1,12 @@
 <template>
   <div class="error">
     Product data not found!
+    <a
+      href="https://my-json-server.typicode.com/dani-edo/my-adventure/products"
+      target="_blank"
+    >
+      (https://my-json-server.typicode.com/dani-edo/my-adventure/products)
+    </a>
     <button @click="reload">Reload data</button>
   </div>
 </template>
