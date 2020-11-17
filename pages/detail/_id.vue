@@ -19,7 +19,7 @@
               alt="location"
               class="mr-1"
             />
-            {{ product.location }}
+            {{ product.loc }}
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
         <section class="description">
           <div class="title">Description</div>
           <p>
-            {{ product.description }}
+            {{ product.desc }}
           </p>
         </section>
         <section class="include-exclude row">
@@ -59,14 +59,14 @@
         <section class="itinenrary">
           <div class="title">Itinerary</div>
           <div class="content">
-            <div v-for="item in product.itinerary" :key="item.key" class="item">
+            <div v-for="item in product.itin" :key="item.key" class="item">
               <span alt="icon" class="icon">
                 <span></span>
               </span>
               <span class="text">
                 <div class="title">{{ item.title }}</div>
                 <div class="description">
-                  {{ item.description }}
+                  {{ item.desc }}
                 </div>
               </span>
             </div>

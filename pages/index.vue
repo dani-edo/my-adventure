@@ -20,7 +20,7 @@
               :date="item.date"
               :time="item.time"
               :price="item.price"
-              :location="item.location"
+              :location="item.loc"
               :img="item.img[0]"
             ></product-card>
           </nuxt-link>
