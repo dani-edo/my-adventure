@@ -58,6 +58,11 @@
   .content {
     padding-bottom: 3rem;
     & > .box {
+      @include mobile_large {
+        max-width: calc(100% - 20px);
+        margin-right: auto;
+        margin-left: auto;
+      }
       .title {
         text-align: center;
         font-size: 2rem;
@@ -119,6 +124,11 @@
   }
   .include-exclude {
     margin-top: 1rem;
+    @include mobile_large {
+      & > *:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
     .title {
       font-size: 1.3rem;
       font-weight: 500;
