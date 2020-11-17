@@ -110,79 +110,81 @@
       height: 300px;
     }
   }
-  section.description {
-    margin-top: 1.5rem;
-    .title {
-      font-size: 1.5rem;
-      font-weight: 500;
+  section {
+    &:not(:first-child) {
+      margin-top: 1.5rem;
     }
-    p {
-      text-indent: 2rem;
-      line-height: 1.5;
-      text-align: justify;
-    }
-  }
-  .include-exclude {
-    margin-top: 1rem;
-    @include mobile_large {
-      & > *:not(:first-child) {
-        margin-top: 1rem;
+    &.description {
+      .title {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+      p {
+        text-indent: 2rem;
+        line-height: 1.5;
+        text-align: justify;
       }
     }
-    .title {
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
-    ul {
-      padding: 0;
-      li {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        margin-bottom: 0.5rem;
-        img {
-          width: 1.2rem;
-          margin: 0 0.5rem;
+    &.include-exclude {
+      @include mobile_large {
+        & > *:not(:first-child) {
+          margin-top: 1rem;
         }
       }
-    }
-  }
-  .itinenrary {
-    margin-top: 1rem;
-    & > .title {
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
-    .content {
-      .item {
-        display: flex;
-        padding: 0.5rem 0;
-        &:not(:last-child) .icon::after {
-          content: '';
-          display: block;
-          position: absolute;
-          width: 5px;
-          height: calc(100% + 1rem);
-          background-color: rgb(78 78 95);
-          left: 50%;
-          transform: translateX(-50%);
-        }
-        .icon {
-          width: 40px;
-          position: relative;
-          span {
-            width: 1rem;
-            height: 1rem;
-            background-color: rgb(78 78 95);
-            border-radius: 50%;
-            display: block;
-            margin: 1px auto 0;
+      .title {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.5rem;
+          img {
+            width: 1.2rem;
+            margin: 0 0.5rem;
           }
         }
-        .text {
-          width: 100%;
-          .title {
-            font-weight: bold;
+      }
+    }
+    &.itinenrary {
+      & > .title {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+      .content {
+        .item {
+          display: flex;
+          padding: 0.5rem 0;
+          &:not(:last-child) .icon::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 5px;
+            height: calc(100% + 1rem);
+            background-color: rgb(78 78 95);
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .icon {
+            width: 40px;
+            position: relative;
+            span {
+              width: 1rem;
+              height: 1rem;
+              background-color: rgb(78 78 95);
+              border-radius: 50%;
+              display: block;
+              margin: 1px auto 0;
+            }
+          }
+          .text {
+            width: 100%;
+            .title {
+              font-weight: bold;
+            }
           }
         }
       }

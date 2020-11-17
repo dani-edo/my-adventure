@@ -65,7 +65,9 @@ export default {
     window.removeEventListener('scroll', this.onScroll)
   },
   mounted() {
-    this.getData()
+    if (this.products.length === 0) {
+      this.getData()
+    }
   },
   methods: {
     onScroll() {

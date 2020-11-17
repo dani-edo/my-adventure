@@ -143,7 +143,9 @@ export default {
     },
   },
   mounted() {
-    this.getData()
+    if (this.product.length === 0) {
+      this.getData()
+    }
   },
   methods: {
     ...mapMutations(['addProducts']),
