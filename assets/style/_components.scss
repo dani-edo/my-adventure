@@ -5,6 +5,9 @@
   overflow: hidden;
   height: 400px;
   transition: all ease-out 500ms;
+  @include mobile_large {
+    height: 250px;
+  }
   &:hover {
     margin-top: -5px;
     box-shadow: 0 10px 10px 0px #00000061;
@@ -28,6 +31,7 @@
     .title {
       font-size: 1.5rem;
       font-weight: 500;
+      color: white;
     }
     .scedule {
       display: flex;

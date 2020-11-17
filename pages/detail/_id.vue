@@ -94,6 +94,26 @@
           </div>
         </div>
       </div>
+
+      <div class="recommendation row container mt-10">
+        <h3 class="title">You might like this too</h3>
+        <div
+          v-for="item in products.filter((e, i) => suggestIndex.includes(i))"
+          :key="item.key"
+          class="col-4 p-2"
+        >
+          <nuxt-link :to="`/detail/${item.id}`">
+            <product-card
+              :title="item.title"
+              :date="item.date"
+              :time="item.time"
+              :price="item.price"
+              :location="item.loc"
+              :img="item.img[0]"
+            ></product-card>
+          </nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -132,14 +152,20 @@ export default {
           link: '#',
         },
       ],
+      suggestIndex: [],
+      suggestion: [],
     }
   },
   computed: {
     product() {
-      const data = this.$store.state.products.filter((e) => {
-        return e.id === parseInt(this.$route.params.id)
-      })
+      const data = this.$store.state.products.filter(
+        (e) => e.id === parseInt(this.$route.params.id)
+      )
       return data[0] ? data[0] : []
+    },
+    products() {
+      if (this.$store.state.products) this.getRandomProduct()
+      return this.$store.state.products
     },
   },
   mounted() {
@@ -150,6 +176,16 @@ export default {
   methods: {
     ...mapMutations(['addProducts']),
     ...mapActions(['getData']),
+    getRandomProduct() {
+      while (this.suggestIndex.length < 3) {
+        const number = Math.round(Math.random() * 8)
+        if (
+          !this.suggestIndex.includes(number) &&
+          number !== this.$route.params.id - 1
+        )
+          this.suggestIndex.push(number)
+      }
+    },
   },
   head() {
     return {

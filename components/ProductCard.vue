@@ -1,6 +1,6 @@
 <template>
   <div class="product-card">
-    <img class="product-image" :src="img" alt="bali" />
+    <img class="product-image" :src="img" :alt="`${img} not found`" />
     <div class="label">
       <div class="title">
         {{ title }}
