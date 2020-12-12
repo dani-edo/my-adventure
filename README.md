@@ -1,20 +1,24 @@
-# my-adventure
+# My-Adventure
 
-## Build Setup
+Simple storefront for showing travel and tourism acitivity product.
 
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+## Dependencies
 ```
+"@nuxtjs/axios": "^5.12.2",
+"@nuxtjs/pwa": "^3.0.2",
+"core-js": "^3.6.5",
+"hooper": "^0.3.4",
+"nuxt": "^2.14.6"
+```
+Or you can check on package.json file
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Try this!
+If you want to see this project result (dev mode), all you have to do is:
+1. Download or clone this project in your local area
+2. Enter this directory (terminal)
+3. Type `npm install` to install all needed packages
+4. Type `npm run dev` to see the result / view
+5. Open `http://localhost:3000/` in your browser
+
+## App Result
+You can see this app result instantly at this page : https://my-adventure.vercel.app/
