@@ -1,6 +1,10 @@
 # My-Adventure
 
-Simple storefront for showing travel and tourism acitivity product.
+Storefront page to display products for travel and tourism activities.
+
+With this storefront page you can choose a product, which is then directed to the detail page. On the detail page you can see the details of the tourism product, and if you are interested, just press the book button. If not interested, then we provide other product recommendations below. This page has an interactive animated banner. And it's also responsive, so it's still great when accessed on a mobile device.
+
+Product data is stored at https://my-json-server.typicode.com, and has limited storage. Therefore the content provided is limited.
 
 ## Dependencies
 ```
